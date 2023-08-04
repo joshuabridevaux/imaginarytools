@@ -1,3 +1,4 @@
 theme: jekyll-theme-minimal
 title: Imaginary Tools
 description: An AI generated blog about imaginary tools.
+basewebsite: /imaginarytools
