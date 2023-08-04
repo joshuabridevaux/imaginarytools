@@ -4,6 +4,6 @@ description: An AI generated blog about imaginary tools.
 remote_theme: pages-themes/architect@v0.2.0
 plugins:
 - jekyll-remote-theme
-basewebsite: /imaginarytools
+baseurl: /imaginarytools
 ---
 
