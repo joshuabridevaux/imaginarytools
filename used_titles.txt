@@ -1,1 +1,1 @@
-GyroGrip, FlexiGrab, MegaSqueeze
+GyroGrip, FlexiGrab, MegaSqueeze, PowerLift
