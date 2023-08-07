@@ -34,6 +34,11 @@ jobs:
             OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
         run: python scripts/generate_post.py
 
+      - name: commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: 'Adding new post'
+
       - uses: repo-sync/pull-request@v2
         name: Create Pull Request
         with:
