@@ -70,7 +70,7 @@ def create_post(publish_date, title, image_name, article_text):
     filename = f"{date_text}-{title}.md"
     first_sentence = article_text.partition('\n')[0]
     remaining_body = article_text.split("\n",2)[2]
-    with open(f"{filename}", 'w') as handler:
+    with open(f"_posts/{filename}", 'w') as handler:
         handler.write("---\n")
         handler.write(f"layout: default\n")
         handler.write(f"title: {title}\n")
@@ -118,7 +118,7 @@ save_used_title(f"{previous_ideas}, {tool_name}")
 #generate image
 image_urls = generate_image_urls(tool_summary, num_images)
 
-image_filename = (f"{current_datetime}.jpg")
+image_filename = (f"assets/{current_datetime}.jpg")
 save_url_to_file(image_urls[0], image_filename)
 
 create_post(current_datetime, tool_name, image_filename, tool_article)
