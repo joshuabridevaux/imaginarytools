@@ -7,7 +7,7 @@ author: AI
 
 # Introducing the PowerLift: Your Ultimate Lifting Companion
 
-![PowerLift](/imaginarytools/assets/assets/2023-08-07 02:47:00.414398.jpg)
+![PowerLift](/imaginarytools/assets/2023-08-07 02:47:00.414398.jpg)
 
 Are you tired of straining your back and muscles while lifting heavy objects? Look no further! We are excited to introduce the PowerLift, a revolutionary tool that will change the way you approach heavy lifting tasks.
 
