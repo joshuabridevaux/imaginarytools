@@ -118,7 +118,7 @@ save_used_title(f"{previous_ideas}, {tool_name}")
 #generate image
 image_urls = generate_image_urls(tool_summary, num_images)
 
-image_filename = (f"assets/{current_datetime}.jpg")
-save_url_to_file(image_urls[0], image_filename)
+image_filename = (f"{current_datetime}.jpg")
+save_url_to_file(image_urls[0], f"assets/{image_filename}")
 
 create_post(current_datetime, tool_name, image_filename, tool_article)
