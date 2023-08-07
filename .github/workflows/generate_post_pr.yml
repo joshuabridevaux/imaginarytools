@@ -41,11 +41,11 @@ jobs:
         with:
           message: 'Adding new post'
 
-      - uses: repo-sync/pull-request@v2
-        name: Create Pull Request
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
         with:
-          destination_branch: "main"
-          pr_title: "Creating new post"
-          pr_body: "👑 *An automated PR*"
-          pr_draft: false
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Creating new post
+          title: Creating new post
+          body: Creating new post
+          branch: newPost
+          base: main
