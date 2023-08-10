@@ -5,6 +5,5 @@ remote_theme: pages-themes/architect@v0.2.0
 plugins:
 - jekyll-remote-theme
 baseurl: /imaginarytools
-google_analytics: G-KW0BXBY8HK
 ---
 
