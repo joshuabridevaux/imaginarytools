@@ -49,3 +49,9 @@ jobs:
           body: Creating new post
           branch: newPost
           base: main
+
+      - name: Merge pull request
+        uses: sudo-bot/action-pull-request-merge@v1.2.0
+        with:
+            github-token: ${{ secrets.GITHUB_TOKEN }}
+            number: ${{ pull-request-number }}
