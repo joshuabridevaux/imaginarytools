@@ -43,6 +43,7 @@ jobs:
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
+        id: cpr
         with:
           commit-message: Creating new post
           title: Creating new post
@@ -54,4 +55,4 @@ jobs:
         uses: sudo-bot/action-pull-request-merge@v1.2.0
         with:
             github-token: ${{ secrets.GITHUB_TOKEN }}
-            number: ${{ pull-request-number }}
+            number: ${{ steps.cpr.outputs.pull-request-number }}
