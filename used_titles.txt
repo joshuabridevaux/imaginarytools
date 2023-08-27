@@ -1,1 +1,1 @@
-GyroGrip, FlexiGrab, MegaSqueeze, PowerLift, TurboGrab, UltraGrip, MightyReach, FlexiClamp, SuperGrab, MaxiTwist, QuickLock, RapidCut, ErgoTwist, MegaCut, NanoGrab, FlexiHold, MegaSweep, SureHold, SwiftSlice, FlexiSlice, TurboSlice, MegaLever, PowerGrip, NanoTwist, FlexiReach
+GyroGrip, FlexiGrab, MegaSqueeze, PowerLift, TurboGrab, UltraGrip, MightyReach, FlexiClamp, SuperGrab, MaxiTwist, QuickLock, RapidCut, ErgoTwist, MegaCut, NanoGrab, FlexiHold, MegaSweep, SureHold, SwiftSlice, FlexiSlice, TurboSlice, MegaLever, PowerGrip, NanoTwist, FlexiReach, MegaSweep
