@@ -1,11 +1,11 @@
-import openai
+from openai import OpenAI
 import json
 import requests
 from datetime import datetime
 import os
 
 useMock = False
-openai.api_key = os.getenv('OPENAI_KEY')
+client = OpenAI(api_key = os.getenv("OPENAI_KEY"))
 model = "gpt-3.5-turbo"
 num_images = 1
 image_size = "1024x1024"
@@ -34,7 +34,7 @@ def completeChat(messages):
     if useMock:
         return response_message_mock
     else:
-        response = openai.ChatCompletion.create(
+        response = client.chat.completions.create(
             model=model,
             messages=messages,
             n=1,
@@ -50,7 +50,7 @@ def generate_image_urls(image_prompt, num_images):
         for x in range(num_images):
             urls.append(mock_image_url)
     else:
-        response = openai.Image.create(
+        response = client.images.generate(
             prompt=f"{image_prompt}",
             n=num_images,
             size=image_size
