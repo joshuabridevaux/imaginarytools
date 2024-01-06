@@ -56,7 +56,7 @@ def generate_image_urls(image_prompt, num_images):
             size=image_size
         )
         for x in range(num_images):
-            urls.append(response['data'][x]['url'])
+            urls.append(response.data[x].url)
 
     return urls
 
