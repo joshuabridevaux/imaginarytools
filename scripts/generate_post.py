@@ -42,7 +42,7 @@ def completeChat(messages):
             temperature=0
         )
         #print(f"ChatGPT: {response}") #debug
-        return response['choices'][0]['message']['content']
+        return response.choices[0].message.content
 
 def generate_image_urls(image_prompt, num_images):
     urls = []
